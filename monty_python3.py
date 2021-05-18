@@ -1,18 +1,20 @@
 #!/usr/bin/env python3
-round = 0           # integer round initiated to 0
-while True:        # sets up an infinite loop condition
-    round = round + 1     # increase the round counter
+rnd = 0           # integer round initiated to 0
+
+answer = " "
+
+while rnd < 3 and answer != "Brian" and answer != "Shrubbery":
+# sets up an infinite loop condition
+    rnd = rnd + 1     # increase the round counter
     print('Finish the movie title, "Monty Python\'s The Life of ______"')
     answer = input("Your guess--> ")    # string ans collected from user
+    answer = answer.capitalize()
     if answer == 'Brian': # logic to check if user gave correct answer
         print('Correct!')
-        break             # break statement escapes the while loop
     elif round == 3:    # logic to ensure round has not yet reached 3
         print('Sorry, the answer was Brian.')
-        break             # break statement escapes the while loop
     elif answer.lower() == "shrubbery":
         print("Conratulations! You gave the super secret answer!")
-        break
-    else:                 # if answer was wrong, and round is not yet equal to 3
+    else:
         print('Sorry. Try again!')
 
