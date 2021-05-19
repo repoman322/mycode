@@ -20,5 +20,6 @@ print()
 for farm in farms:
     x = farm.get("name")
     y = farm.get("agriculture")
-    z = ",".join(y)
-    print("Name: " + x + "ag" + z)
+    z = ", ".join(y)
+    #print("Name: " + x + " has " + z)
+    print(f"{x} has {z}")
