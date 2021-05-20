@@ -24,10 +24,10 @@ def main():
         
         mylist = searchFor.split() 
         cust3 = urllib.request.urlopen(url).readlines()
-        print(len(cust3))
+        print(f"Searching {len(cust3)} lines for all of these words '{searchFor}'")
         lines = 0
         mylist = searchFor.split()
-        for line in cust3[0:5]:
+        for line in cust3: #[0:15]:
             #print(type(line))
             each = 0
             #print(f'each is {each},len is {len(mylist)} and line is {line}')
