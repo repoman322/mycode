@@ -27,12 +27,13 @@ def get_ip_data(column):
 column = get_columns()
 
 data = []
-more = True
-while more:
+#more = True
+while True:
     data.append(get_ip_data(column))
     yn = input("Add another row? (y/n) ")
-    if 'y' not in yn:
-        more = False
+    if yn.lower() == "n":
+    #if 'y' not in yn:
+        #more = False
         break
         
 print(data)
