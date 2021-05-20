@@ -41,8 +41,4 @@ def main():
 
         print(f"total number of lines with all words is {lines}")
 
-        with urllib.request.urlopen(url).read().decode("utf-8") as trace:
-            # loop across the text file
-            for line in trace:
-                 print(line)
 main()
