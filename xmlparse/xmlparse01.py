@@ -20,7 +20,7 @@ def main():
     for elem in root.iter():
         print(elem.tag)
 
-    print(ET.tostring(root, encoding="utf8").decode("utf8"))
+    #print(ET.tostring(root, encoding="utf8").decode("utf8"))
     for movie in root.iter("movie"):
         print(movie.attrib)
     input("Press Enter to continue")
