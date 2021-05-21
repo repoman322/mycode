@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-
+"""
+Authonr: keg
+copycat progam
+"""
 # import additional code to complete our task
 import shutil
 import os
@@ -13,4 +16,3 @@ shutil.copy("5g_research/sdn_network.txt", "5g_research/sdn_network.txt.copy")
 # copy the entire directoryA to directoryB
 # The following line will create the directory if it does not exist already
 shutil.copytree("5g_research/", "5g_research_backup/")
-
